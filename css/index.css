@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
 
-html, body {font-family: 'Nanum Gothic', sans-serif; font-size: 14px;}
+html, body {font-family: 'Nanum Gothic', sans-serif; font-size: 14px; height: 2000px;}
 
 .red {color: #db1825;}
 
@@ -42,10 +42,16 @@ html, body {font-family: 'Nanum Gothic', sans-serif; font-size: 14px;}
 .membership ul {display: flex; background-color: #db1825; border-radius: 50px; padding: .5em 1em; color: #ffffff;}
 .membership ul li:nth-child(2) {margin: 0 .5em;}
 
+
+
+
+
+
 /********************* main-wrapper **********************/
 .main-wrapper {max-width: 1900px; margin: auto; position: relative;}
-.main-wrapper .slide {padding-top: 33%; position: relative; height: 0; overflow: hidden;
-	 background-repeat: no-repeat; background-position: center;}
+.main-wrapper .slide {padding-top: 25%; position: relative; overflow: hidden; 
+	height: 480px; 
+	background-repeat: no-repeat; background-position: center;}
 .main-wrapper .slide:nth-child(1) {background-image: url('../img/main01.jpg');}
 .main-wrapper .slide:nth-child(2) {background-image: url('../img/main02.jpg');}
 .main-wrapper .slide:nth-child(3) {background-image: url('../img/main03.jpg');}
@@ -58,28 +64,40 @@ html, body {font-family: 'Nanum Gothic', sans-serif; font-size: 14px;}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+/******************** aside **********************/
+aside.bt-top {position: fixed; bottom: 20px; right: 20px; background-color: #db1825; color: #ffffff; border-radius: 50%; padding: 1em; font-size: 1.5em; z-index: 100; display: none;}
+aside.bt-top.active {display: block;}
+
+
 /******************** 반응형 **********************/
-@media (min-width: 576px) {
+@media (max-width: 1400px) {
 
 }
 
-@media (min-width: 768px) {
+@media (max-width: 1200px) {
 
 }
 
-@media (min-width: 992px) {
+@media (max-width: 992px) {
+	.top {font-size: .85em;}
+}
+
+@media (max-width: 768px) {
 
 }
 
-@media (min-width: 1200px) {
-
-}
-
-@media (min-width: 1400px) {
-
-}
-
-@media (min-width: 1600px) {
+@media (max-width: 576px) {
 
 }
 
