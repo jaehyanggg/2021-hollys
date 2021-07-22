@@ -8,29 +8,7 @@ function topAni() {
 	$('html, body').stop().animate({"scrollTop": 0}, 300)
 }
 
-$(".main-wrapper .pager-wrapper a.pager").click(function(e){
-	e.preventDefault();
-	$(".main-wrapper .pager-wrapper a.pager").removeClass('active')
-	$(this).addClass('active')
-})
-
-$(".main-wrapper .pager-wrapper .bt-play").click(function(e){
-	e.preventDefault();
-	$(".main-wrapper .pager-wrapper .bt-play").addClass('active')
-	$(".main-wrapper .pager-wrapper .bt-pause").removeClass('active')
-})
-
-$(".main-wrapper .pager-wrapper .bt-pause").click(function(e){
-	e.preventDefault();
-	$(".main-wrapper .pager-wrapper .bt-play").removeClass('active')
-	$(".main-wrapper .pager-wrapper .bt-pause").addClass('active')
-})
-
 var swiperMain = new Swiper('.main-wrapper .swiper-container', {
-	navigation: {
-		nextEl: '.main-wrapper .bt-next',
-		prevEl: '.main-wrapper .bt-prev',
-	},
 	pagination: {
 		el: '.main-wrapper .swiper-pagination',
 		clickable: true

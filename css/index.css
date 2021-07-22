@@ -61,8 +61,6 @@ html, body {font-family: 'Nanum Gothic', sans-serif; font-size: 14px; height: 20
 .main-wrapper .slide:nth-child(5) {background-image: url('../img/main05.jpg');}
 .main-wrapper .slide:nth-child(6) {background-image: url('../img/main06.jpg');}
 .main-wrapper .bt-swiper {top: calc(50% - 52px); color: #fff; text-shadow: 0 0 6px rgba(0, 0, 0, .5);}
-.main-wrapper .bt-swiper.bt-prev {left: 3%;}
-.main-wrapper .bt-swiper.bt-next {right: 3%;}
 
 
 
