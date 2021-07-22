@@ -37,17 +37,17 @@ var swiperMain = new Swiper('.main-wrapper .swiper-container', {
 	}
 })
 
-var swiperBest = new Swiper('.best-wrapper .swiper-container', {
+var swiperMenu = new Swiper('.menu-wrapper .swiper-container', {
 	slidesPerView: 1,
 	slidesPerGroup: 1,
 	spaceBetween: 0,
 	loop: true,
 	navigation: {
-		nextEl: '.best-wrapper .bt-next',
-		prevEl: '.best-wrapper .bt-prev',
+		nextEl: '.menu-wrapper .bt-next',
+		prevEl: '.menu-wrapper .bt-prev',
 	},
 	pagination: {
-		el: '.best-wrapper .swiper-pagination',
+		el: '.menu-wrapper .swiper-pagination',
 		clickable: true
 	},
 	breakpoints: {

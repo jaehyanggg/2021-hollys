@@ -99,7 +99,16 @@ html, body {font-family: 'Nanum Gothic', sans-serif; font-size: 14px; height: 20
 
 
 
-
+/********************* best-wrapper **********************/
+.menu-wrapper {text-align: center;}
+.menu-wrapper > .title-wrapper {padding-top: 3.5em; padding-bottom: 1em; font-size: 2.5em;}
+.menu-wrapper > .slide-wrapper {padding-bottom: 120px;}
+.menu-wrapper > .slide-wrapper {position: relative;}
+.menu-wrapper > .slide-wrapper > .slide-stage {width: calc(100% - 100px); margin: auto;}
+.menu-wrapper > .slide-wrapper .slide {border: 1px solid #ccc; padding-bottom: 4em;}
+.menu-wrapper > .slide-wrapper > .slide-stage > .slide-wrap > .slide > li {display: table; width: 100%;}
+.menu-wrapper > .slide-wrapper > .slide-stage > .slide-wrap > .slide > li > div {display: table-cell; vertical-align: middle;}
+.menu-wrapper > .slide-wrapper > .slide-stage > .slide-wrap > .slide > div > .best-title {font-size: 1.125em; color: #333; line-height: 1.5;}
 
 
 
@@ -135,6 +144,7 @@ aside.bt-top.active {display: block;}
 	.hollys-wrapper .list-wrapper > .list > .cont-wrap .title {font-size: .85em;}
 	.hollys-wrapper .list-wrapper > .list > .cont-wrap .content {font-size: .5em;}
 	
+	.menu-wrapper > .title-wrapper {font-size: 1.5em;}
 }
 
 @media (max-width: 768px) {
