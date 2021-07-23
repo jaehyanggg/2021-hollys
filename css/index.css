@@ -33,9 +33,9 @@ html, body {font-family: 'Nanum Gothic', sans-serif; font-size: 14px; height: 20
 .header {padding-top: 1.5em; border-bottom: 3px solid #db1825;}
 .header .logo img {width: 10%; margin-left: 50%; transform: translateX(-50%);}
 
-.membership {font-size: 1em; width: 250px; margin-top: 2em; margin-bottom: 1em; margin-left: 50%; transform: translateX(-50%);}
-.membership ul {display: flex; background-color: #db1825; border-radius: 50px; padding: .5em 1em; justify-content: center; color: #ffffff;}
-.membership ul li:nth-child(2) {margin: 0 .5em;}
+.login {font-size: 1em; width: 250px; margin-top: 2em; margin-bottom: 1em; margin-left: 50%; transform: translateX(-50%);}
+.login ul {display: flex; background-color: #db1825; border-radius: 50px; padding: .5em 1em; justify-content: center; color: #ffffff;}
+.login ul li:nth-child(2) {margin: 0 .5em;}
 
 .navi {font-size: 1.25em;}
 .navi ul {display: flex; justify-content: center; text-align: center;}
@@ -68,36 +68,31 @@ html, body {font-family: 'Nanum Gothic', sans-serif; font-size: 14px; height: 20
 
 
 
-/********************* evt-wrapper **********************/
+/********************* hollys-wrapper **********************/
 .wrapper3 > h3.title {font-size: 1.5em; text-align: center; line-height: 1.5; position: relative; margin-bottom: 2em;}
 .wrapper3 > h3.title > span {border-bottom: 1px solid #999; display: inline-block;}
-
+.wrapper3 > h3.title > .bt-more {position: absolute; top: 0; right: 0; font-size: 0.65em; color: #777; cursor: pointer;}
+.wrapper3 > h3.title > .bt-more::after {display: inline-block; box-sizing: border-box; content: '+'; width: 22px; height: 22px; border-radius: 50%; border: 1px solid #bbb; font-size: 1.5em; line-height: 20px; text-align: center; transform: translateY(2px); margin-left: 6px;}
+.wrapper3 > h3.title > .bt-more:hover {color: #333;}
 
 .hollys-wrapper {background-color: #f8f8f8; padding: 5em 0;}
 .hollys-wrapper > .wrapper3 {overflow: hidden;}
 
-.hollys-wrapper .cont-wrapper {background-color: #fff; margin-bottom: 2em;}
-.hollys-wrapper .cont-wrapper {display: flex;}
-.hollys-wrapper .cont-wrapper > div.banner-wrap {width: 50%; padding: 3%;}
-.hollys-wrapper .cont-wrapper > div.cont-wrap {width: 50%; padding: 3%;}
+.hollys-wrapper .cont-wrapper {background-color: #fff; margin-bottom: 2em; display: flex;}
+.hollys-wrapper .cont-wrapper > div.banner-wrap {padding: 3%;}
+.hollys-wrapper .cont-wrapper > div.banner-wrap img {width: 100%; height: 100%; overflow: hidden;}
+.hollys-wrapper .cont-wrapper > div.cont-wrap {width: 100%; padding: 4%;}
 .hollys-wrapper .cont-wrapper > div.cont-wrap > h4.title {font-size: 1.5em;}
 .hollys-wrapper .cont-wrapper > div.cont-wrap > p.content {font-size: 1.25em; color: #777; line-height: 1.5; padding: 2em 0;}
 .hollys-wrapper .cont-wrapper > div.cont-wrap > div.date {font-size: 1.125em; padding-bottom: 2em;}
 .hollys-wrapper .cont-wrapper > div.cont-wrap > button.bt-detail {border: 1px solid #333; color: #333; padding: 0.5em 2em; background-color: transparent; font-family: inherit; font-size: inherit; cursor: pointer; transition: all 0.25s;}
 .hollys-wrapper .cont-wrapper > div.cont-wrap > button.bt-detail:hover {background-color: #333; color: #f9f9f9;}
-.hollys-wrapper .list-wrapper {display: flex; justify-content: center;}
-.hollys-wrapper .list-wrapper > .list {background-color: #fff; width: 49%;}
-.hollys-wrapper .list-wrapper > .list:nth-child(2) {margin-left: 2%;}
-.hollys-wrapper .list-wrapper > .list > .cont-wrap {padding: 1.5em 0.5em; text-align: center; letter-spacing: -1px; line-height: 1.25;}
-.hollys-wrapper .list-wrapper > .list > .cont-wrap .title {font-size: 1.125em; padding: 0.5em 0; cursor: pointer;}
-.hollys-wrapper .list-wrapper > .list > .cont-wrap .content {color: #555; padding: 0.5em 0; cursor: pointer;}
-.hollys-wrapper .list-wrapper > .list > .cont-wrap:hover > .title,
-.hollys-wrapper .list-wrapper > .list > .cont-wrap:hover > .content {text-decoration: underline;}
 
 
 
 
-/********************* best-wrapper **********************/
+
+/********************* menu-wrapper **********************/
 .menu-wrapper {text-align: center;}
 .menu-wrapper > .title-wrapper {padding-top: 3.5em; padding-bottom: 1em; font-size: 2.5em;}
 .menu-wrapper > .slide-wrapper {padding-bottom: 120px;}
@@ -111,8 +106,15 @@ html, body {font-family: 'Nanum Gothic', sans-serif; font-size: 14px; height: 20
 
 
 
-
-
+/********************* membership-wrapper **********************/
+.membership-wrapper .list-wrapper {display: flex; justify-content: center;}
+.membership-wrapper .list-wrapper > .list {background-color: #fff; width: 49%;}
+.membership-wrapper .list-wrapper > .list:nth-child(2) {margin-left: 2%;}
+.membership-wrapper .list-wrapper > .list > .cont-wrap {padding: 1.5em 0.5em; text-align: center; letter-spacing: -1px; line-height: 1.25;}
+.membership-wrapper .list-wrapper > .list > .cont-wrap .title {font-size: 1.125em; padding: 0.5em 0; cursor: pointer;}
+.membership-wrapper .list-wrapper > .list > .cont-wrap .content {color: #555; padding: 0.5em 0; cursor: pointer;}
+.membership-wrapper .list-wrapper > .list > .cont-wrap:hover > .title,
+.membership-wrapper .list-wrapper > .list > .cont-wrap:hover > .content {text-decoration: underline;}
 
 
 /******************** aside **********************/
@@ -130,19 +132,25 @@ aside.bt-top.active {display: block;}
 }
 
 @media (max-width: 992px) {
-	.membership {font-size: .85em; width: 200px;}
+	.login {font-size: .85em; width: 200px;}
 	.navi {font-size: 1em;}
-	.sub-wrapper {font-size: .5em;}
+	.sub-wrapper {font-size: .65em;}
 
 	.wrapper3 > h3.title {font-size: 1.25em;}
+	.hollys-wrapper .cont-wrapper {flex-direction: column;}
+	.hollys-wrapper .cont-wrapper > div.banner-wrap {padding: 5% 5% 2% 5%;}
+	.hollys-wrapper .cont-wrapper > div.cont-wrap {text-align: center; padding-bottom: 6%;}
 	.hollys-wrapper .cont-wrapper > div.cont-wrap > h4.title {font-size: 1.25em;}
 	.hollys-wrapper .cont-wrapper > div.cont-wrap > p.content {font-size: 1em;}
 	.hollys-wrapper .cont-wrapper > div.cont-wrap > div.date {font-size: .85em;}
 	.hollys-wrapper .cont-wrapper > div.cont-wrap > button.bt-detail {font-size: .85em;}
-	.hollys-wrapper .list-wrapper > .list > .cont-wrap .title {font-size: .85em;}
-	.hollys-wrapper .list-wrapper > .list > .cont-wrap .content {font-size: .5em;}
 	
 	.menu-wrapper > .title-wrapper {font-size: 1.5em;}
+
+	.membership-wrapper .list-wrapper {flex-direction: column;}
+	.membership-wrapper .list-wrapper > .list {width: 100%;}
+	.membership-wrapper .list-wrapper > .list > .cont-wrap .title {font-size: 1em;}
+	.membership-wrapper .list-wrapper > .list > .cont-wrap .content {font-size: .85em;}
 }
 
 @media (max-width: 768px) {
@@ -150,11 +158,7 @@ aside.bt-top.active {display: block;}
 }
 
 @media (max-width: 576px) {
-	.wrapper3 > h3.title {font-size: 1em;}
-	.hollys-wrapper .cont-wrapper > div.cont-wrap > h4.title {font-size: 1em;}
-	.hollys-wrapper .cont-wrapper > div.cont-wrap > p.content {font-size: .85em;}
-	.hollys-wrapper .cont-wrapper > div.cont-wrap > div.date {font-size: .6em;}
-	.hollys-wrapper .cont-wrapper > div.cont-wrap > button.bt-detail {font-size: .6em;}
+
 }
 
 

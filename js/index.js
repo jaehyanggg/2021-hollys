@@ -1,3 +1,11 @@
+$(".sub-wrapper").hide()
+$(".navi").mouseover(function(){
+	$(".sub-wrapper").stop().slideDown(500)
+})
+$(".navi").mouseout(function(){
+	$(".sub-wrapper").stop().slideUp(500)
+})
+
 $(window).scroll(function() {
 	var sct = $(this).scrollTop()
 	if(sct > 200) $("aside.bt-top").addClass('active')
