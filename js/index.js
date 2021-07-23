@@ -1,9 +1,8 @@
-$(".sub-wrapper").hide()
 $(".navi").mouseover(function(){
-	$(".sub-wrapper").stop().slideDown(500)
+	$("ul.small").stop().slideDown(500)
 })
 $(".navi").mouseout(function(){
-	$(".sub-wrapper").stop().slideUp(500)
+	$("ul.small").stop().slideUp(500)
 })
 
 $(window).scroll(function() {
