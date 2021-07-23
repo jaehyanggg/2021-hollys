@@ -64,13 +64,13 @@ function Gallery(parent, imgs) {
 	html += '<div class="img-wrap">';
 	html += '<img src="" alt="big" class="w-100">';
 	html += '</div>';
+	html += '</div>';
 	html += '<div class="thumb-wrap">';
 	for(var i=0; i<this.imgs.length; i++) {
 		html += '<div class="thumb">';
 		html += '<img src="'+imgs[i].src+'" alt="thumb" class="w-100">';
 		html += '</div>';
 	}
-	html += '</div>';
 	html += '</div>';
 	this.$photosWrap = $(html).appendTo(this.$parent);
 	
