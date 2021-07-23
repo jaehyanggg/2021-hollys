@@ -4,9 +4,9 @@ html, body {font-family: 'Nanum Gothic', sans-serif; font-size: 14px; height: 20
 
 .red {color: #db1825;}
 
-.wrapper {max-width: 1600px; margin: auto; padding: 0 .5rem;}
-.wrapper2 {max-width: 1300px; margin: auto; padding: 0 .5rem;}
-.wrapper3 {max-width: 1414px; margin: auto; padding: 0 .5rem; overflow: hidden;}
+.wrapper {max-width: 1600px; margin: 0 auto; padding: 0 .5rem;}
+.wrapper2 {max-width: 1300px; margin: 0 auto; padding: 0 .5rem;}
+.wrapper3 {max-width: 1414px; margin: 0 auto; padding: 0 .5rem; overflow: hidden;}
 
 .disp-table {display: table;}
 .disp-cell {display: table-cell; text-align: center; vertical-align: middle;}
@@ -103,10 +103,24 @@ html, body {font-family: 'Nanum Gothic', sans-serif; font-size: 14px; height: 20
 .menu-wrapper > .slide-wrapper > .slide-stage > .slide-wrap > .slide > div > .best-title {font-size: 1.125em; color: #333; line-height: 1.5;}
 
 
+/********************** md-wrapper  *********************/
+.md-wrapper {display: flex; margin-top: 6em; margin-bottom: 6em; position: relative; border: 1px solid #ccc;}
+.md-wrapper .title-wrapper {position: absolute; top: -20%; left: 50%; transform: translateX(-50%); font-size: 2.5em; text-align: center;}
+.md-wrapper .introduce-wrap {padding: 3%; width: 60%;}
+.md-wrapper .introduce-wrap h1 {font-size: 2em;}
+.md-wrapper .introduce-wrap h2 {margin: 1em 0 3em 0; font-size: 1.85em;}
+.md-wrapper .introduce-wrap .p1 {margin-bottom: 1em; font-size: 1.25em; line-height: 1.35;}
+.md-wrapper .introduce-wrap .p3 {margin: .5em 0;}
+.gallery {display: flex; flex-direction: column; position: relative;}
+.gallery .img-wrap {display: flex; justify-content: center;}
+.gallery > .thumb-wrap {position: absolute; top: 100%; left: 50%; cursor: pointer; display: flex; margin-top: 3em;}
+.gallery > .thumb-wrap img {width: 100px;}
+.gallery > .thumb-wrap > .thumb {margin: .5em; max-width: 150px; border: 1px solid #ccc;}
+
 
 
 /********************* membership-wrapper **********************/
-.membership-wrapper .list-wrapper {display: flex; justify-content: center;}
+.membership-wrapper .list-wrapper {display: flex; justify-content: center; margin-top: 15em; margin-bottom: 15em;}
 .membership-wrapper .list-wrapper > .list {background-color: #fff; width: 49%;}
 .membership-wrapper .list-wrapper > .list:nth-child(2) {margin-left: 2%;}
 .membership-wrapper .list-wrapper > .list > .cont-wrap {padding: 1.5em 0.5em; text-align: center; letter-spacing: -1px; line-height: 1.25;}
@@ -145,6 +159,7 @@ aside.bt-top.active {display: block;}
 	.hollys-wrapper .cont-wrapper > div.cont-wrap > button.bt-detail {font-size: .85em;}
 	
 	.menu-wrapper > .title-wrapper {font-size: 1.5em;}
+	.md-wrapper .title-wrapper {font-size: 1.5em;}
 
 	.membership-wrapper .list-wrapper {flex-direction: column;}
 	.membership-wrapper .list-wrapper > .list {width: 100%;}
