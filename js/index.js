@@ -16,6 +16,10 @@ function topAni() {
 }
 
 var swiperMain = new Swiper('.main-wrapper .swiper-container', {
+	autoplay : {
+		delay : 5000,
+		disableOnInteraction : false,
+	},
 	pagination: {
 		el: '.main-wrapper .swiper-pagination',
 		clickable: true
