@@ -155,7 +155,7 @@ aside.bt-top.active {display: block;}
 	.login {font-size: .85em; width: 200px;}
 	.navi {font-size: 1em;}
 	.navi ul.small {font-size: .85em; top: 42px;}
-
+	
 	.wrapper3 > h3.title {font-size: 1.25em;}
 	.hollys-wrapper .cont-wrapper {flex-direction: column;}
 	.hollys-wrapper .cont-wrapper > div.banner-wrap {padding: 5% 5% 2% 5%;}
@@ -183,8 +183,6 @@ aside.bt-top.active {display: block;}
 	.membership-wrapper .list-wrapper {flex-direction: column; margin-top: 16em;}
 	.membership-wrapper .list-wrapper > .list {width: 100%;}
 	.membership-wrapper .list-wrapper > .list:nth-child(2) {margin-left: 0;}
-	.membership-wrapper .list-wrapper > .list > .cont-wrap .title {font-size: 1em;}
-	.membership-wrapper .list-wrapper > .list > .cont-wrap .content {font-size: .85em;}
 
 	.footer-wrapper {font-size: .5em; padding: 25px;}
 }
@@ -194,9 +192,8 @@ aside.bt-top.active {display: block;}
 }
 
 @media (max-width: 576px) {
-	.md-wrapper .introduce-wrap h1 {font-size: 1.25em;}
-	.md-wrapper .introduce-wrap h2 {font-size: 1em;}
-	.md-wrapper .introduce-wrap .p1 {font-size: .9em;}
+
+
 }
 
 
