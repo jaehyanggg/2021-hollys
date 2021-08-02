@@ -192,7 +192,7 @@ aside.bt-top.active {display: block;}
 }
 
 @media (max-width: 576px) {
-
+	.wrapper3 > h3.title > .bt-more {display: none;}
 
 }
 
