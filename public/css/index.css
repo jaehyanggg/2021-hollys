@@ -37,11 +37,11 @@ html, body {font-family: 'Nanum Gothic', sans-serif; font-size: 14px; height: 20
 .login ul {display: flex; background-color: #db1825; border-radius: 50px; padding: .5em 1em; justify-content: center; color: #ffffff;}
 .login ul li:nth-child(2) {margin: 0 .5em;}
 
-.navi {font-size: 1.25em; position: relative;}
+.navi {font-size: 1.25em; position: relative; cursor: pointer;}
 .navi ul.all {display: flex; justify-content: center; text-align: center;}
-.navi ul.all li.big {width: 20%; padding: 1em 0;}
+.navi ul.all li.big {width: 25%; padding: 1em 0;}
 
-.navi ul.small {font-size: .85em; display: none; position: absolute; z-index: 999; top: 51px; background-color: #fff; width: 20%;}
+.navi ul.small {display: none; position: absolute; z-index: 999; top: 51px; background-color: #fff; width: 25%;}
 .navi ul.small li {padding: 1em; cursor: pointer;}
 .navi ul.small li:hover {color: #db1825;}
 
@@ -154,7 +154,7 @@ aside.bt-top.active {display: block;}
 @media (max-width: 992px) {
 	.login {font-size: .85em; width: 200px;}
 	.navi {font-size: 1em;}
-	.navi ul.small {font-size: .65em; top: 42px;}
+	.navi ul.small {font-size: .85em; top: 42px;}
 
 	.wrapper3 > h3.title {font-size: 1.25em;}
 	.hollys-wrapper .cont-wrapper {flex-direction: column;}
